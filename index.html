@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050810" />
+  <meta name="description" content="Sipho Makubalo — software engineer. A working portfolio of ten shipped projects: URL shortener, Git tooling, webhook inspector, finance dashboard, escrow engine, data pipelines and cloud infrastructure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sipho Makubalo — Engineering portfolio" />
+  <meta property="og:description" content="Ten production-shaped projects, each with a live demo and public source." />
+  <meta property="og:url" content="https://sklevel8-portfolio.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sipho Makubalo — Engineering portfolio" />
+  <meta name="twitter:description" content="Ten production-shaped projects, each with a live demo and public source." />
+  <title>Sipho Makubalo — Engineering portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to projects</a>
+
+  <header class="topbar">
+    <div class="shell topbar__inner">
+      <a class="brand" href="./" aria-label="Sipho Makubalo home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 8-4.5 4L9 16M15 8l4.5 4L15 16"/>
+          </svg>
+        </span>
+        <span class="brand__name">Sipho <span>Makubalo</span></span>
+        <span class="brand__tag">portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work" class="is-active">Work</a>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <span class="nav__divider" aria-hidden="true"></span>
+        <a href="https://github.com/sklevel8" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell page">
+    <section class="hero">
+      <div>
+        <div class="eyebrow"><span class="eyebrow__dot"></span> 10 shipped projects · all live</div>
+        <h1>Backend depth, <span>front-end polish.</span></h1>
+        <p class="lede">
+          I build systems that hold up under real constraints: money that cannot move twice,
+          webhooks that must not be missed, dashboards that stay readable at 2&nbsp;a.m. Every
+          project below is deployed and open source — click through and use it.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#work">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Browse the work
+          </a>
+          <a class="btn btn--ghost" href="https://github.com/sklevel8" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.88 1.52 2.3 1.08 2.86.82.09-.64.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            GitHub profile
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>10</strong><span>live deployments</span></div>
+          <div><strong>10</strong><span>public repositories</span></div>
+          <div><strong>0</strong><span>build steps required</span></div>
+        </div>
+      </div>
+
+      <aside class="card card--accent featured">
+        <div class="card__head">
+          <div>
+            <h2 class="card__title">Featured</h2>
+            <p class="card__hint">Escrow Engine</p>
+          </div>
+          <span class="badge badge--accent">state machine</span>
+        </div>
+        <p class="featured__text">
+          A seven-state escrow machine where a payment callback cannot skip a step, plus a
+          gateway policy that refuses to fund on an amount mismatch. Drive the machine yourself
+          in the live demo.
+        </p>
+        <ul class="featured__list">
+          <li><span class="dot"></span> Explicit transition table, terminal states locked</li>
+          <li><span class="dot"></span> Exact-cents gateway matching, no float maths</li>
+          <li><span class="dot"></span> Append-only audit trail on every move</li>
+        </ul>
+        <a class="btn btn--primary btn--block" href="https://sklevel8-p2p-escrow.netlify.app" target="_blank" rel="noopener">Open Escrow Engine ↗</a>
+      </aside>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section__head">
+        <div>
+          <h2 class="h2">Selected work</h2>
+          <p class="section__desc">Filter by discipline or search by name. Each card links to the live site and its source.</p>
+        </div>
+        <div class="controls">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4" stroke-linecap="round"/></svg>
+            <input id="searchInput" type="search" placeholder="Search projects…" aria-label="Search projects" autocomplete="off" />
+          </div>
+          <div class="tabs" role="tablist" aria-label="Filter projects">
+            <button class="tab" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="web">Web</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="data">Data</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="infra">Infra</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+      <div id="noResults" class="empty hidden"><strong>No projects match</strong><span>Try a different filter or search term.</span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="grid grid--sidebar">
+        <div class="card">
+          <h2 class="h2">How these are built</h2>
+          <p class="muted" style="margin-top:10px">
+            The demos are deliberately static: HTML, CSS and vanilla JavaScript, no bundler, no
+            runtime secrets. Where a project has a real backend, the UI mirrors its actual
+            contracts — the same transition table, the same validation rules, the same report
+            fields — so the demo explains the system rather than impersonating it.
+          </p>
+          <div class="principles">
+            <div>
+              <h3 class="h3">Honest demos</h3>
+              <p class="muted small">Simulated data is labelled as simulated. Real report files drive the dashboards where they exist.</p>
+            </div>
+            <div>
+              <h3 class="h3">Accessible by default</h3>
+              <p class="muted small">Semantic landmarks, visible focus, keyboard paths and reduced-motion support throughout.</p>
+            </div>
+            <div>
+              <h3 class="h3">Boring infrastructure</h3>
+              <p class="muted small">Static hosting, immutable asset caching and security headers set in <code class="mono">netlify.toml</code>.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card card--soft">
+          <h3 class="card__title">Engineering notes</h3>
+          <ul class="list" id="notes">
+            <li class="list__item"><div class="list__body"><div class="list__title">Integer cents, never floats</div><div class="list__meta">Escrow amounts are parsed and compared as integers.</div></div></li>
+            <li class="list__item"><div class="list__body"><div class="list__title">Base62 instead of hashing</div><div class="list__meta">Short codes are reversible encodings of a row id — no collisions to retry.</div></div></li>
+            <li class="list__item"><div class="list__body"><div class="list__title">One message per change</div><div class="list__meta">Watchers diff state before notifying, so subscribers are not spammed.</div></div></li>
+            <li class="list__item"><div class="list__body"><div class="list__title">Luhn before lookup</div><div class="list__meta">Invalid identity numbers never reach a database query.</div></div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="section__head">
+        <div>
+          <h2 class="h2">Stack</h2>
+          <p class="section__desc">What the projects actually use — not a wish list.</p>
+        </div>
+      </div>
+      <div class="stack-grid" id="stackGrid"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© <span id="year">2026</span> Sipho Makubalo · built for the web, deployed on Netlify.</span>
+        <div class="row row--tight">
+          <a href="https://github.com/sklevel8" target="_blank" rel="noopener">GitHub</a>
+          <span class="dim">·</span>
+          <a href="https://app.netlify.com/teams/sk13level" target="_blank" rel="noopener">Netlify</a>
+          <span class="dim">·</span>
+          <a href="#work">Back to work</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
